@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { Box, Flex, Text } from "@chakra-ui/react";
+import { Clima } from "@/components/Clima";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,6 +12,7 @@ export default function Home() {
         <Flex h="15vh" w="100%" align={"center"}>
           <Text borderBottom={"1px solid black"}>Climatize</Text>
         </Flex>
+        <Clima />
       </Box>
     </Box>
   );
